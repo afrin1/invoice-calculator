@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Hatching Eggs Price Calculator</string>
+    <string name="box_input_hint">Enter no of boxes</string>
+    <string name="price_input_hint">Enter price per egg</string>
+    <string name="search_menu_title">Search</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="text1">1 Box = 210 Eggs(102%)</string>
+    <string name="text2">Invoicing Eggs = 206 (100%)</string>
+    <string name="text3">Free Eggs = 4 (2%)</string>
+    <string name="textInput1">No. of Boxes</string>
+    <string name="textInput2">Price Per Egg(Rs.)</string>
+    <string name="textInput4">Invoicing Eggs</string>
+    <string name="textInput5">Free Eggs</string>
+    <string name="textInput3">Payable Amount (Rs.)</string>
+    <string name="innoway">Developed by Innoway</string>
+</resources>

@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alpha="0.9"
+    android:background="#000000">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:src="@drawable/e2"
+        />
+
+   <!-- <TextView
+        android:id="@+id/Text1"
+        style="@style/InfoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/text1" />
+
+    <TextView
+        android:id="@+id/Text2"
+        style="@style/InfoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Text1"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:text="@string/text2" />
+
+    <TextView
+        android:id="@+id/Text3"
+        style="@style/InfoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Text2"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:text="@string/text3" />-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/TextInput1"
+                    style="@style/CalculatorText"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_column="1"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:text="@string/textInput1" />
+
+                <EditText
+                    android:id="@+id/box_input"
+                    style="@style/ValueText"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_column="2"
+                    android:layout_weight="1"
+                    android:background="@drawable/edittext_round"
+                    android:hint="@string/box_input_hint"
+                    android:inputType="number"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/TextInput4"
+                    style="@style/CalculatorText"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_column="1"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:text="@string/textInput4" />
+
+                <TextView
+                    android:id="@+id/invoicing_eggs"
+                    style="@style/ValueText"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_column="2"
+                    android:layout_weight="1"
+                    android:background="@drawable/edittext_round"
+                    android:inputType="number"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/TextInput5"
+                    style="@style/CalculatorText"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_column="1"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:text="@string/textInput5" />
+
+                <TextView
+                    android:id="@+id/free_eggs"
+                    style="@style/ValueText"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_column="2"
+                    android:layout_weight="1"
+                    android:background="@drawable/edittext_round"
+                    android:inputType="number" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/TextInput2"
+                    style="@style/CalculatorText"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_column="1"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:text="@string/textInput2" />
+
+                <EditText
+                    android:id="@+id/price_input"
+                    style="@style/ValueText"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_column="2"
+                    android:layout_weight="1"
+                    android:background="@drawable/edittext_round"
+                    android:hint="@string/price_input_hint"
+                    android:inputType="number" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/TextOutput"
+                    style="@style/CalculatorText"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_column="1"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:text="@string/textInput3" />
+
+                <TextView
+                    android:id="@+id/textResult"
+                    style="@style/ValueText"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_column="2"
+                    android:layout_weight="1"
+                    android:background="@drawable/edittext_round" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <Button
+                    android:id="@+id/clear"
+                    style="@style/InfoText"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_column="1"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorAccent"
+                    android:onClick="onClearBtnClicked"
+                    android:text="Clear" />
+
+                <Button
+                    android:id="@+id/calculate"
+                    style="@style/InfoText"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_column="2"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorAccent"
+                    android:onClick="onCalculateBtnClicked"
+                    android:text="calculate" />
+            </TableRow>
+        </TableLayout>
+
+        <LinearLayout
+            android:id="@+id/subtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="70dp"
+                android:src="@drawable/saara2"
+                android:layout_marginRight="20dp"
+                android:layout_above="@id/innoway"
+                />
+
+            <TextView
+                android:layout_marginTop="-20dp"
+                android:id="@+id/innoway"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/SubText"
+                android:text="@string/innoway"
+                android:layout_marginBottom="10dp"
+                android:background="@android:color/black"
+                android:layout_marginRight="20dp"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>
